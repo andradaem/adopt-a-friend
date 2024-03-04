@@ -1,0 +1,12 @@
+.card.d-flex {
+  flex-direction: row;
+  align-items: center;
+}
+
+.card .card-img {
+  width: 200px;
+}
+
+.card .badge {
+  font-size: 20px;
+}

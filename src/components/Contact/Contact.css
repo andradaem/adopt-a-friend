@@ -1,0 +1,55 @@
+.contact-container {
+    background-color: var(--soft-pink);
+    padding: 30px;
+    color: #333;
+    /* Adjust text color for better readability */
+}
+
+.contact-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    color: var(--soft-pink);
+    margin-right: 5px;
+}
+
+.contact-card {
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card-title {
+    color: var(--soft-pink);
+    margin-bottom: 15px;
+}
+
+.contact-adopt-button {
+    background-color: var(--soft-pink);
+    border: none;
+    color: #fff;
+}
+
+.contact-adopt-button:hover {
+    background-color: #ff98b4;
+    /* Slightly darker pink on hover */
+}
+
+.contact-hours {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}

@@ -1,0 +1,99 @@
+@import "./variables.css";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.App .mt-auto {
+  margin-top: auto;
+}
+
+.App .app-row {
+  display: flex;
+}
+
+.App .cars-sidebar {
+  width: 300px;
+  flex: 0 0 300px;
+  min-height: 600px;
+  padding: 90px 30px 30px 0;
+  background-color: var(--gray);
+}
+
+.App .cars-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.App .cars-sidebar .cars-list-item {
+  padding: 10px 20px;
+  background-color: var(--pink);
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.App .cars-sidebar .cars-list-item .cars-list-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App .cars-sidebar .cars-list-item .cars-list-item__icon svg {
+  height: 25px;
+  width: 25px;
+}
+
+.App .cars-sidebar .cars-list-item:hover {
+  background-color: var(--dark-blue);
+}
+
+.App .cars-sidebar .cars-list-item a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.App .cars-main-content {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.App .cars-main-content .cars-card {
+  width: 300px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.App .cars-main-content .cars-card:hover {
+  background-color: var(--hoverGray);
+}
+
+.App .cars-main-content .cars-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.App .card-details {
+  position: relative;
+}
+
+.App .card-details img {
+  height: 500px;
+}
+
+.carousel-control-next,
+.carousel-control-previous {
+  color: var(--black);
+}
+
+.w-100 {
+  width: 100%;
+}

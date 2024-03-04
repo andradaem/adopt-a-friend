@@ -1,0 +1,50 @@
+@import "../../variables.css";
+
+.cars-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3;
+}
+
+.cars-button:hover {
+  margin-top: 2px;
+}
+
+.cars-button.contained:hover {
+  background-color: var(--hoverGray);
+}
+
+.cars-button.contained {
+  background-color: var(--gray);
+}
+
+.cars-button.outlined {
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.cars-button.default {
+  border-color: var(--gray);
+  color: var(--gray);
+}
+
+.cars-button.default.contained {
+  color: var(--black);
+}
+
+.cars-button.danger.contained {
+  background-color: var(--red);
+  color: var(--gray);
+}
+
+.cars-button.danger.outlined {
+  border-color: var(--red);
+  color: var(--red);
+}
