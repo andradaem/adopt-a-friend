@@ -2,6 +2,7 @@
   "name": "adopt-a-friend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andradaem.github.io/adopt-a-friend/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
