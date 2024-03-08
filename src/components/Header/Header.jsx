@@ -22,7 +22,7 @@ function Header() {
     <header>
       <div className="pets-header">
         <div className="header-start">
-          <img className="header-img" src="/images/logo.png" alt="Logo" />
+          <img className="header-img" src="https://i.ibb.co/sRBGT9s/logo.png" alt="Logo" />
         </div>
         <div className="header-title">
           <h1>Adopt a friend</h1>

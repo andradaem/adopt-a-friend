@@ -18,7 +18,7 @@ import "./MainContent.css"
 
 const CardPlaceholder = () => (
   <Card style={{ width: "18rem", height: "500px" }}>
-    <Card.Img variant="top" src="/images/pet-place-holder.png" />
+    <Card.Img variant="top" src="https://i.ibb.co/QJL6jtt/pet-place-holder.png" />
     <Card.Body>
       <Placeholder as={Card.Title} animation="glow">
         <Placeholder xs={6} />
