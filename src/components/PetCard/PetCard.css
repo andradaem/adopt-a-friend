@@ -1,0 +1,16 @@
+.pets-card {
+    max-width: 300px;
+    max-height: 500px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border: 100px solid var(--pink);
+}
+
+.pets-card:hover {
+    background-color: var(--hoverGray);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}

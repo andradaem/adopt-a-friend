@@ -16,8 +16,8 @@ const Loader = ({ message }) => {
   }, []);
 
   return (
-    <div className="cars-loader">
-      <img src="/images/loader.gif" alt="Loading car gif" />
+    <div className="pets-loader">
+      <img src="/images/loader.gif" alt="Loading pet gif" />
       {message && <p>{message}</p>}
     </div>
   );

@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-
 import {
   Container,
   Row,
@@ -10,12 +9,13 @@ import {
 } from "react-bootstrap";
 
 import useFetch from "../../hooks/useFetch";
+import "./CardDetails.css"
 
 const CardDetailsPlaceholder = () => (
   <Container className="p-5">
     <Row>
       <Col>
-        <Image src="/images/placeholder.png" />
+        <Image src="/images/pet-place-holder.png" />
       </Col>
     </Row>
     <Row className="mb-3">
@@ -40,7 +40,7 @@ const CardDetailsPlaceholder = () => (
 
 export default function CardDetails() {
   const { cardId } = useParams();
-  const { data, loading } = useFetch("/pets/data/item/btId", cardId);
+  const { data, loading } = useFetch("/pets/data/item/byId", cardId);
 
   if (loading) {
     return <CardDetailsPlaceholder />;
@@ -66,7 +66,7 @@ export default function CardDetails() {
         </Row>
       )}
       <Row className="mb-5">
-        <h1 className="h1">{data.title}</h1>
+        <h1 className="h1">{data.name}</h1>
       </Row>
       <Row className="mb-5">
         <Col>{data.description}</Col>

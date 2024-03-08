@@ -14,7 +14,7 @@ const useFetch = (url, id) => {
         return team;
       case "/pets/data/list":
         return pets;
-      case "/pets/data/item/btId":
+      case "/pets/data/item/byId":
         return pets.find((item) => item.id === id);
       default:
         return null;

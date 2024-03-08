@@ -1,7 +1,6 @@
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
 import { useContext } from "react";

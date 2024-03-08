@@ -9,7 +9,7 @@ function Button({ buttonText, variant, color, onClick }) {
 
   return (
     <button
-      className={`cars-button ${variant} ${color}`}
+      className={`pets-button ${variant} ${color}`}
       onClick={handleOnClick}
     >
       {buttonText}

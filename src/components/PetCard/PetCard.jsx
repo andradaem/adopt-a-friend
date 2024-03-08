@@ -11,6 +11,9 @@ import { useNavigate } from "react-router-dom";
 import { PetsContext } from "../../context/PetsContext";
 import { SharedContext } from "../../context/SharedContext";
 
+import "./PetCard"
+import "../../variables.css"
+
 function PetCard({ id, imageUrl, name, age, gender, selected, cardColor }) {
   const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
   const navigate = useNavigate();
@@ -43,9 +46,10 @@ function PetCard({ id, imageUrl, name, age, gender, selected, cardColor }) {
   return (
     <>
       <Card
-        className="cars-card p-3"
+        className="pets-card"
         style={{
           backgroundColor: cardColor,
+
         }}
 
       >
@@ -61,11 +65,20 @@ function PetCard({ id, imageUrl, name, age, gender, selected, cardColor }) {
               className="mb-3"
               variant="success"
               onClick={handleAdoptAction}
+              style={{
+                backgroundColor: "transparent",
+                color: "var(--pink)",
+                border: "2px solid var(--pink)",
+                fontWeight: "bold"
+              }}
             >
               <GiDogHouse /> Adopt
             </Button>
           )}
-          <Button variant="danger" onClick={handleOpenConfirmationModal}>
+          <Button variant="danger" style={{
+            backgroundColor: "var(--pink)",
+            border: "var(--pink)"
+          }} onClick={handleOpenConfirmationModal}>
             Delete
           </Button>
         </Card.Body>
@@ -78,7 +91,7 @@ function PetCard({ id, imageUrl, name, age, gender, selected, cardColor }) {
           onCancel={handleCancel}
           onConfirm={handleConfirm}
         />
-      </Card>
+      </Card >
     </>
   );
 }

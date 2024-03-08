@@ -1,59 +1,27 @@
 .pets-header {
   background-color: var(--pink);
-  padding: 15px 0;
-  color: #fff;
-  /* Text color */
-}
-
-.navbar {
-  padding: 0;
-  /* Remove default padding */
-}
-
-.container {
+  height: 90px;
+  width: 100%;
+  padding: 10px 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* Align items vertically in the center */
+  gap: 50px;
+  justify-content: space-between;
 }
 
-.header-info a,
-.icons a {
-  background-color: var(--pink);
-  /* Icon and text color */
-  text-decoration: none;
-  margin-right: 15px;
+.pets-header .header-start {
+  display: flex;
+  flex-direction: row;
 }
 
-/* Add some spacing to the social icons */
-.icons a:not(:last-child) {
-  margin-right: 10px;
+.header-img {
+  position: relative;
+  width: 120px;
+  height: 125px;
+  top: 26.5px;
+  left: 50px;
 }
 
-/* Style the "Add new pet" button */
-.ms-auto {
-  border: none;
-}
-
-.ms-auto:hover {
-  background-color: black;
-  /* Darker pink on hover */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .header-info a,
-  .icons a {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .ms-auto {
-    margin-top: 10px;
-    width: 100%;
-  }
+.header-title {
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }

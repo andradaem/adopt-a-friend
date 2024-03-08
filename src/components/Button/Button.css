@@ -1,6 +1,6 @@
 @import "../../variables.css";
 
-.cars-button {
+.pets-button {
   padding: 0;
   border: none;
   font: inherit;
@@ -13,38 +13,42 @@
   transition: all 0.3;
 }
 
-.cars-button:hover {
+.pets-button:hover {
   margin-top: 2px;
 }
 
-.cars-button.contained:hover {
+.pets-button.contained:hover {
   background-color: var(--hoverGray);
 }
 
-.cars-button.contained {
+.pets-button.contained {
   background-color: var(--gray);
 }
 
-.cars-button.outlined {
+.pets-button.outlined {
   background-color: transparent;
   border: 1px solid;
 }
 
-.cars-button.default {
+.pets-button.default {
   border-color: var(--gray);
   color: var(--gray);
 }
 
-.cars-button.default.contained {
+.pets-button.default.contained {
   color: var(--black);
 }
 
-.cars-button.danger.contained {
+.pets-button.danger.contained {
   background-color: var(--red);
   color: var(--gray);
 }
 
-.cars-button.danger.outlined {
+.pets-button.danger.outlined {
   border-color: var(--red);
   color: var(--red);
+}
+
+.pets-button.adopt {
+  background-color: var(--pink);
 }

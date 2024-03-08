@@ -29,17 +29,17 @@ const TeamPlaceholder = () => (
 export default function Team() {
   const { data, loading } = useFetch("/team/data/list");
 
-  const getColorByStatus = (status) => {
+  const getColorByStatus = (rating) => {
     let color = "";
 
-    switch (status) {
-      case "office":
+    switch (true) {
+      case (rating <= 5 && rating >= 4.5):
         color = "success";
         break;
-      case "vacation":
+      case (rating < 4.5 && rating >= 3):
         color = "info";
         break;
-      case "inactive":
+      case (rating < 3):
         color = "danger";
         break;
       default:
@@ -74,18 +74,17 @@ export default function Team() {
         <Row>
           <Col>
             {data.map(
-              ({ id, imageUrl, name, numberOfRentals, jobTitle, status }) => (
+              ({ id, imageUrl, name, numberOfRentals, rating }) => (
                 <Card className="d-flex mb-3 p-2" key={id}>
-                  <Card.Img src={imageUrl} />
+                  <Card.Img className="card-img" src={imageUrl} />
                   <Card.Body>
                     <Stack direction="horizontal" gap={3}>
                       <Card.Title>{name}</Card.Title>
                       <Badge pill bg="primary">
                         {numberOfRentals}
                       </Badge>
-                      <Card.Text>{jobTitle}</Card.Text>
-                      <Badge className="ms-auto" bg={getColorByStatus(status)}>
-                        {status}
+                      <Badge className="ms-auto" bg={getColorByStatus(rating)}>
+                        rating: {rating}/5
                       </Badge>
                     </Stack>
                   </Card.Body>
