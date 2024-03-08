@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b56fab3.css",
-    "main.js": "/static/js/main.6c3fe03b.js",
-    "static/js/787.4688aa71.chunk.js": "/static/js/787.4688aa71.chunk.js",
-    "index.html": "/index.html",
-    "main.5b56fab3.css.map": "/static/css/main.5b56fab3.css.map",
-    "main.6c3fe03b.js.map": "/static/js/main.6c3fe03b.js.map",
-    "787.4688aa71.chunk.js.map": "/static/js/787.4688aa71.chunk.js.map"
+    "main.css": "/adopt-a-friend/static/css/main.5b56fab3.css",
+    "main.js": "/adopt-a-friend/static/js/main.0a708e8d.js",
+    "static/js/787.4688aa71.chunk.js": "/adopt-a-friend/static/js/787.4688aa71.chunk.js",
+    "index.html": "/adopt-a-friend/index.html",
+    "main.5b56fab3.css.map": "/adopt-a-friend/static/css/main.5b56fab3.css.map",
+    "main.0a708e8d.js.map": "/adopt-a-friend/static/js/main.0a708e8d.js.map",
+    "787.4688aa71.chunk.js.map": "/adopt-a-friend/static/js/787.4688aa71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b56fab3.css",
-    "static/js/main.6c3fe03b.js"
+    "static/js/main.0a708e8d.js"
   ]
 }
