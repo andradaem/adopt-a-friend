@@ -23,7 +23,7 @@ function App() {
       <FormProvider>
         <FormAdoptPetProvider>
           <PetsProvider>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
               <div className="App">
                 <Header />
                 <div className="app-row">
