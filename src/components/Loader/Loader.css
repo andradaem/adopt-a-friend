@@ -1,4 +1,4 @@
-.cars-loader {
+.pets-loader {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -12,12 +12,12 @@
   z-index: 100;
 }
 
-.cars-loader img {
+.pets-loader img {
   height: 100px;
   width: 100px;
 }
 
-.cars-loader p {
+.pets-loader p {
   font-size: 24px;
   font-weight: 600;
 }

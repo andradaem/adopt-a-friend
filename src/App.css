@@ -14,20 +14,7 @@
   display: flex;
 }
 
-.App .cars-sidebar {
-  width: 300px;
-  flex: 0 0 300px;
-  min-height: 600px;
-  padding: 90px 30px 30px 0;
-  background-color: var(--gray);
-}
-
-.App .cars-sidebar ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.App .cars-sidebar .cars-list-item {
+.App .pets-sidebar .pets-list-item {
   padding: 10px 20px;
   background-color: var(--pink);
   margin-bottom: 20px;
@@ -38,27 +25,27 @@
   cursor: pointer;
 }
 
-.App .cars-sidebar .cars-list-item .cars-list-item__icon {
+.App .pets-sidebar .pets-list-item .pets-list-item__icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.App .cars-sidebar .cars-list-item .cars-list-item__icon svg {
+.App .pets-sidebar .pets-list-item .pets-list-item__icon svg {
   height: 25px;
   width: 25px;
 }
 
-.App .cars-sidebar .cars-list-item:hover {
-  background-color: var(--dark-blue);
+.App .pets-sidebar .pets-list-item:hover {
+  background-color: var(--pink);
 }
 
-.App .cars-sidebar .cars-list-item a {
+.App .pets-sidebar .pets-list-item a {
   color: var(--white);
   text-decoration: none;
 }
 
-.App .cars-main-content {
+.App .pets-main-content {
   flex: 1;
   padding: 50px;
   display: flex;
@@ -66,32 +53,20 @@
   flex-wrap: wrap;
 }
 
-.App .cars-main-content .cars-card {
-  width: 300px;
+.App .pets-main-content .pets-card {
+  max-width: 300px;
+  max-height: 500px;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
 
-.App .cars-main-content .cars-card:hover {
+.App .pets-main-content .pets-card:hover {
   background-color: var(--hoverGray);
 }
 
-.App .cars-main-content .cars-card .card-body {
+.App .pets-main-content .pets-card .card-body {
   display: flex;
   flex-direction: column;
-}
-
-.App .card-details {
-  position: relative;
-}
-
-.App .card-details img {
-  height: 500px;
-}
-
-.carousel-control-next,
-.carousel-control-previous {
-  color: var(--black);
 }
 
 .w-100 {

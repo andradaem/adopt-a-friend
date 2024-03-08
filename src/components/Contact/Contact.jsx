@@ -1,82 +1,74 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Card, Button, Carousel, Image } from "react-bootstrap";
 import { TelephoneFill, EnvelopeFill, MapFill } from "react-bootstrap-icons";
 import "./Contact.css"; // Import your custom styles for pink color
 import { useNavigate } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-const Contact = () => {
-  let navigate = useNavigate();
-  const routeChange = () => {
-    let path = `/`;
-    navigate(path);
-  }
+
+function Contact() {
+  const navigate = useNavigate();
+
+  const handleOnClick = () => {
+    navigate(`/`);
+  };
+  const images = ["https://www.aspca.org/sites/default/files/how-you-can-help_adoptions-tips_main-image-dog.jpg",
+    "https://www.dandylandpetcarecenter.com/wp-content/uploads/service/doggie-daycare.jpg",
+    "https://www.aspca.org/sites/default/files/how-you-can-help_adoptions-tips_main-image-dog.jpg",
+    "https://ontariospca.ca/wp-content/uploads/2019/02/Adopting-shelter-dog-10-tips.jpg",
+    "https://dogfriendlysanantonio.com/wp-content/uploads/2020/06/dog-adoption-san-antonio-image.png"
+  ]
+
   return (
+
     <Container className="contact-container">
-      <h1 className="contact-heading">Contact Information</h1>
-      <p className="contact-description">
-        If you have any questions or concerns, please feel free to contact us
-        using the information below. Additionally, if you are interested in
-        adopting a pet, we'd love to help you find your new furry friend!
-      </p>
-      <Row>
-        <Col>
-          <h3 className="contact-subheading">Contact Details</h3>
-          <p>
-            <strong>Phone:</strong>{" "}
-            <TelephoneFill className="contact-icon" /> +444-44-4444
-          </p>
-          <p>
-            <strong>Email:</strong>{" "}
-            <EnvelopeFill className="contact-icon" /> info@example.com
-          </p>
-          <p>
-            <strong>Address:</strong>{" "}
-            <MapFill className="contact-icon" /> 444 Strada Strada, Oras
-          </p>
-        </Col>
-        <Col>
-          <h3 className="contact-subheading">Animal Adoption</h3>
-          <p>
+      <Container className="contact-title">
+        <h1>Contact Information</h1>
+      </Container>
+
+      <Card className="text-centered">
+        <Card.Body>
+          <Card.Title>Pet Adoption.</Card.Title>
+          <Card.Text>
             If you are interested in adopting a pet, please visit our adoption
             page or contact us directly for more information.
-          </p>
-          <Card className="contact-card">
-            <Card.Body>
-              <Card.Title className="contact-card-title">
-                See Available Pets
-              </Card.Title>
-              {/* Display a list of available pets */}
-              {/* Add your pet information here */}
+          </Card.Text>
+          <Button variant="danger" className="mb-3" onClick={handleOnClick}>
+            Check Pet List
+          </Button>
+        </Card.Body>
 
-              <Button variant="success" className="contact-adopt-button" onClick={routeChange()}>
-                Adopt
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <h3 className="contact-subheading">Office Hours</h3>
-          <p className="contact-hours">
-            Monday-Friday: 9:00 AM - 5:00 PM
-            <br />
-            Saturday-Sunday: Closed
-          </p>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <h3 className="contact-subheading">Connect with Us</h3>
-          <p>
-            Follow us on social media for updates and news:
-            <br />
-            {/* Add social media links here */}
-          </p>
-        </Col>
-      </Row>
-    </Container>
+      </Card>
+      <Card className="text-centered">
+        <Card.Body>
+          <Card.Title>Where you can find us.</Card.Title>
+          <Card.Text>
+            If you are interested in adopting a pet, please visit our adoption
+            page or contact us directly for more information.
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer className="text-muted">
+          <Breadcrumb>
+            <Breadcrumb.Item href="#"> <TelephoneFill className="contact-icon" /> +444-44-4444
+            </Breadcrumb.Item>
+            <Breadcrumb.Item href="https://yahoo.com">
+              <EnvelopeFill className="contact-icon" /> info@example.com
+            </Breadcrumb.Item>
+            <Breadcrumb.Item href="https://www.google.com/maps/place/Pets+at+Home+Street/@51.1273343,-2.7587176,17z/data=!3m2!4b1!5s0x4872174a145a431d:0xe2c6c4d70dc18188!4m6!3m5!1s0x4872174a1528717d:0xacdb90cef479a45c!8m2!3d51.127331!4d-2.7561427!16s%2Fg%2F11d_bbh13p?entry=ttu"> <MapFill className="contact-icon" /> 444 Dogs Street</Breadcrumb.Item>
+          </Breadcrumb></Card.Footer>
+      </Card>
+      <Carousel className="contact-carousel" data-bs-theme="dark">
+        {images.map((image) => (
+          <Carousel.Item key={image}>
+            <Image src={image} fluid />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+
+    </Container >
+
   );
-};
+}
 
 export default Contact;

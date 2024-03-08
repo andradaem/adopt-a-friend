@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Stack } from "react-bootstrap";
 
-function NavItem({ text, path, icon, handleToggle }) {
+function NavItem({ text, path, icon }) {
   return (
-    <li className="cars-list-item">
-      <Link to={path} onClick={handleToggle}>
+    <li className="pets-list-item">
+      <Link to={path} >
         <Stack direction="horizontal" gap={3}>
-          <div className="cars-list-item__icon">{icon}</div>
-          <div className="cars-list-item__text">{text}</div>
+          <div className="pets-list-item__icon">{icon}</div>
+          <div className="pets-list-item__text">{text}</div>
         </Stack>
       </Link>
     </li>

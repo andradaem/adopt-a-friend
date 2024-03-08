@@ -47,7 +47,7 @@ export default function AddPetForm({ isVisible, onCancel, onSave }) {
   };
 
   return (
-    <Offcanvas className="cars-offcanvas" show={isVisible} placement="end">
+    <Offcanvas className="pets-offcanvas" show={isVisible} placement="end">
       <Offcanvas.Header closeButton onHide={onCancel}>
         <Offcanvas.Title>Add new pet</Offcanvas.Title>
       </Offcanvas.Header>
