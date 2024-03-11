@@ -6,7 +6,7 @@ function NavItem({ text, path, icon }) {
   return (
     <li className="pets-list-item">
       <Link to={path} >
-        <Stack direction="horizontal" gap={3}>
+        <Stack className="header-stack" direction="horizontal" gap={3}>
           <div className="pets-list-item__icon">{icon}</div>
           <div className="pets-list-item__text">{text}</div>
         </Stack>

@@ -7,7 +7,7 @@ import { BiSolidContact } from "react-icons/bi";
 
 function Sidebar() {
   return (
-    <aside className="cars-sidebar">
+    <aside className="pets-sidebar">
       <nav>
         <ul>
           <NavItem path="/" text="Pets" icon={<MdPets />} />

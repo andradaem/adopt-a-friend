@@ -65,7 +65,7 @@ export default function AdoptPetForm({ isVisible, onCancel, onSave }) {
                             type="text"
                             size="lg"
                             name="firstName"
-                            placeholder="Inser first name"
+                            placeholder="Insert first name"
                             required
                             value={adoptFormValues.firstName}
                             onChange={handleValueChange}
@@ -81,7 +81,7 @@ export default function AdoptPetForm({ isVisible, onCancel, onSave }) {
                             type="text"
                             size="lg"
                             name="lastName"
-                            placeholder="Inser last name"
+                            placeholder="Insert last name"
                             required
                             value={adoptFormValues.lastName}
                             onChange={handleValueChange}

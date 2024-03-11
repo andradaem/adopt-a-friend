@@ -14,16 +14,16 @@ function Footer() {
         <div>
           <Nav className="header-nav">
             <Nav.Link href="https://www.facebook.com" target="_blank" >
-              <Facebook color="dark" size="32px" />
+              <Facebook color="white" size="32px" />
             </Nav.Link>
             <Nav.Link href="https://t.me" target="_blank">
-              <Telegram color="dark" size="32px" />
+              <Telegram color="white" size="32px" />
             </Nav.Link>
             <Nav.Link href="https://messenger.com" target="_blank">
-              <Messenger color="dark" size="32px" />
+              <Messenger color="white" size="32px" />
             </Nav.Link>
             <Nav.Link href="https://www.pinterest.com" target="_blank">
-              <Pinterest color="dark" size="32px" />
+              <Pinterest color="white" size="32px" />
             </Nav.Link>
           </Nav>
         </div>

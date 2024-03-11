@@ -72,3 +72,21 @@
 .w-100 {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .App .pets-sidebar {
+    max-width: 160px;
+  }
+
+  .App .header-img {
+    display: none;
+  }
+
+  .App .pets-header .header-title h1 {
+    display: none;
+  }
+
+  .App .petsFooter {
+    max-height: 45px;
+  }
+}

@@ -8,7 +8,7 @@ export const pets = [
     selected: false,
     images: [
       "https://www.akc.org/wp-content/uploads/2017/11/Cavalier-King-Charles-Spaniel-standing-in-the-grass.jpg",
-      "https://www.gravitispetsupplies.co.uk/cdn/shop/articles/king-charles-spaniel_300x300.jpg?v=1664788850",
+      "https://cdn.shopify.com/s/files/1/2993/4600/files/a_Stock_image_of_a_Cavalier_King_Charles_Spaniel_-_BigPawShop.ca_2435a2ed-4c55-43c1-8310-103f7e81d20e_600x600.png?v=1683087882",
       "https://cdn.britannica.com/38/233238-050-DBB93048/Cavalier-King-Charles-Spaniel-dog.jpg"],
     description: "Introducing Charlie, the delightful King Charles Spaniel with a heart as regal as his name. With soulful eyes and a silky coat, Charlie is more than a dog; he's a royal companion ready to add warmth and grace to your home.King Charles Spaniels, like Charlie, are renowned for their gentle and friendly nature. Charlie thrives on love and attention, making him a perfect match for families or individuals seeking a loyal and affectionate friend. Whether it's a cozy cuddle on the couch or a leisurely stroll in the garden, Charlie's easygoing demeanor makes every moment a joy.This little royal is not just looking for a home; he's in search of a kingdom where kindness reigns supreme. Charlie's loyalty and charm make him an ideal companion for those who appreciate the finer things in life – love, companionship, and the gentle presence of a four-legged friend.If you're ready to open your heart to a furry prince, consider welcoming Charlie into your realm. Come meet Charlie today and experience the royal bond that awaits you! 🐾👑",
   },

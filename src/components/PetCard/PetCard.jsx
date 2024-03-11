@@ -20,6 +20,9 @@ function PetCard({ id, imageUrl, name, age, gender, selected, cardColor }) {
   const { deletePet } = useContext(PetsContext);
   const { changeAdoptPetVisibility } = useContext(SharedContext);
 
+  const handleAdoptAction = () => {
+    changeAdoptPetVisibility(true);
+  };
 
   const handleOpenConfirmationModal = (event) => {
     event.stopPropagation();
@@ -39,9 +42,7 @@ function PetCard({ id, imageUrl, name, age, gender, selected, cardColor }) {
     handleCancel();
   };
 
-  const handleAdoptAction = () => {
-    changeAdoptPetVisibility(true);
-  };
+
 
   return (
     <>

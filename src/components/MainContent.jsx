@@ -42,8 +42,9 @@ const cardPlaceholders = [
 export default function MainContent() {
   const { pets, isLoading, setIsLoading, loadPets, addNewPet } = useContext(PetsContext);
   const { isAddPetVisible, changeAddPetVisibility } = useContext(SharedContext);
-  const { isAdoptPetVisible, changeAdoptPetVisibility } = useContext(SharedContext);
   const [showSuccessNotification, setShowSuccessNotification] = useState(false);
+  const { isAdoptPetVisible, changeAdoptPetVisibility } = useContext(SharedContext);
+
 
   const handleCloseAdoptPet = () => {
     changeAdoptPetVisibility(false);
@@ -80,7 +81,7 @@ export default function MainContent() {
   });
 
   return (
-    <main className="cars-main-content">
+    <main className="pets-main-content">
       {isLoading && cardPlaceholders.map((Item, index) => <Item key={index} />)}
       {!isLoading && (
         <>

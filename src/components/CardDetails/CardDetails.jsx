@@ -6,10 +6,16 @@ import {
   Image,
   Placeholder,
   Carousel,
+  Button,
+  Toast
 } from "react-bootstrap";
 
 import useFetch from "../../hooks/useFetch";
 import "./CardDetails.css"
+import { GiDogHouse } from "react-icons/gi";
+import { React, useContext, useState } from "react";
+import { SharedContext } from "../../context/SharedContext";
+import AdoptPetForm from "../AdoptPetForm/AdoptPetForm";
 
 const CardDetailsPlaceholder = () => (
   <Container className="p-5">
@@ -41,7 +47,25 @@ const CardDetailsPlaceholder = () => (
 export default function CardDetails() {
   const { cardId } = useParams();
   const { data, loading } = useFetch("/pets/data/item/byId", cardId);
+  const { changeAdoptPetVisibility, isAdoptPetVisible } = useContext(SharedContext);
+  const [showSuccessNotification, setShowSuccessNotification] = useState(false);
 
+  const handleCloseAdoptPet = () => {
+    changeAdoptPetVisibility(false);
+  }
+  const handleSaveAdoptPet = () => {
+    changeAdoptPetVisibility(false);
+    setShowSuccessNotification(true);
+
+    setTimeout(() => {
+      setShowSuccessNotification(false);
+    }, 5000);
+  }
+
+
+  const handleAdoptAction = () => {
+    changeAdoptPetVisibility(true);
+  };
   if (loading) {
     return <CardDetailsPlaceholder />;
   }
@@ -69,8 +93,40 @@ export default function CardDetails() {
         <h1 className="h1">{data.name}</h1>
       </Row>
       <Row className="mb-5">
+        <Button
+          className="mb-3"
+          variant="success"
+          onClick={handleAdoptAction}
+          style={{
+            backgroundColor: "transparent",
+            color: "var(--pink)",
+            border: "2px solid var(--pink)",
+            fontWeight: "bold"
+          }}
+        >
+          <GiDogHouse /> Adopt
+        </Button>
+      </Row>
+      <Row className="mb-5">
         <Col>{data.description}</Col>
       </Row>
+      <AdoptPetForm
+        isVisible={isAdoptPetVisible}
+        onCancel={handleCloseAdoptPet}
+        onSave={handleSaveAdoptPet} />
+      <Toast
+        bg="success"
+        show={showSuccessNotification}
+        onClose={() => setShowSuccessNotification(false)}
+        delay={5000} // Auto-hide after 5 seconds (adjust as needed)
+        autohide
+        style={{ position: "absolute", top: 0, right: 0 }}
+      >
+        <Toast.Header>
+          <strong className="mr-auto">Success!</strong>
+        </Toast.Header>
+        <Toast.Body>Your adoption form is saved.</Toast.Body>
+      </Toast>
     </Container>
   );
 }

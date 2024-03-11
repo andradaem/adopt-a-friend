@@ -19,9 +19,10 @@
   width: 120px;
   height: 125px;
   top: 28px;
-  left: 50px;
+  left: 40px;
 }
 
 .header-title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--white)
 }

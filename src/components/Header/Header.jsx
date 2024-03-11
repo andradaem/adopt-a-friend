@@ -27,12 +27,14 @@ function Header() {
         <div className="header-title">
           <h1>Adopt a friend</h1>
         </div>
-
-        {isPetsPage && <SearchBar />}
-
-        {isPetsPage && <Button variant="dark" onClick={handleOpenAddPet}>
-          Add new pet
-        </Button>}
+        <div>
+          {isPetsPage && <SearchBar />}
+        </div>
+        <div className="header-button">
+          {isPetsPage && <Button variant="light" onClick={handleOpenAddPet}>
+            Add new pet
+          </Button>}
+        </div>
       </div>
     </header >
   );
