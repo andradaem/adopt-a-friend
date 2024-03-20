@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/adopt-a-friend/static/css/main.f4685108.css",
-    "main.js": "/adopt-a-friend/static/js/main.09ffdbcc.js",
+    "main.css": "/adopt-a-friend/static/css/main.c46a143b.css",
+    "main.js": "/adopt-a-friend/static/js/main.e782c37d.js",
     "static/js/787.4688aa71.chunk.js": "/adopt-a-friend/static/js/787.4688aa71.chunk.js",
     "index.html": "/adopt-a-friend/index.html",
-    "main.f4685108.css.map": "/adopt-a-friend/static/css/main.f4685108.css.map",
-    "main.09ffdbcc.js.map": "/adopt-a-friend/static/js/main.09ffdbcc.js.map",
+    "main.c46a143b.css.map": "/adopt-a-friend/static/css/main.c46a143b.css.map",
+    "main.e782c37d.js.map": "/adopt-a-friend/static/js/main.e782c37d.js.map",
     "787.4688aa71.chunk.js.map": "/adopt-a-friend/static/js/787.4688aa71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4685108.css",
-    "static/js/main.09ffdbcc.js"
+    "static/css/main.c46a143b.css",
+    "static/js/main.e782c37d.js"
   ]
 }
