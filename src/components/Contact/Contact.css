@@ -2,20 +2,22 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .contact-container .contact-title {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .contact-carousel {
     width: 60%;
     margin-bottom: 100px;
 }
-.contact-container .text-centered{
-    display:flex;
+
+.contact-container .text-centered {
+    display: flex;
     justify-content: center;
 }

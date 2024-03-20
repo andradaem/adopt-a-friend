@@ -31,8 +31,8 @@ function Header() {
           {isPetsPage && <SearchBar />}
         </div>
         <div className="header-button">
-          {isPetsPage && <Button variant="light" onClick={handleOpenAddPet}>
-            Add new pet
+          {isPetsPage && <Button variant="outline-light" onClick={handleOpenAddPet}>
+            Add pet
           </Button>}
         </div>
       </div>

@@ -35,9 +35,9 @@ function SearchBar() {
     return (
         <div className="search-inputGroup">
             <InputGroup>
-                <InputGroup.Text id="basic-addon1">Search Pet</InputGroup.Text>
+                <InputGroup.Text id="basic-addon1">Search</InputGroup.Text>
                 <Form.Control
-                    placeholder="Name"
+                    placeholder="Pet name"
                     aria-label="Name"
                     aria-describedby="basic-addon1"
                     onChange={handleChange}

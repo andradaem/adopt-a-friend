@@ -27,28 +27,41 @@ function Contact() {
         <h1>Contact Information</h1>
       </Container>
 
-      <Card className="text-centered">
-        <Card.Body>
-          <Card.Title>Pet Adoption.</Card.Title>
+      <Card style={{
+        backgroundColor: "transparent",
+        color: "var(--pink)",
+        border: "2px solid var(--pink)",
+        fontWeight: "bold"
+      }}>
+        <Card.Body className="text-center" >
+          <Card.Title>Pet Adoption</Card.Title>
           <Card.Text>
             If you are interested in adopting a pet, please visit our adoption
             page or contact us directly for more information.
           </Card.Text>
-          <Button variant="danger" className="mb-3" onClick={handleOnClick}>
+          <Button className="mb-3" style={{
+            backgroundColor: "var(--pink)",
+            border: "var(--pink)"
+          }} onClick={handleOnClick}>
             Check Pet List
           </Button>
         </Card.Body>
 
       </Card>
-      <Card className="text-centered">
-        <Card.Body>
-          <Card.Title>Where you can find us.</Card.Title>
+      <Card style={{
+        backgroundColor: "transparent",
+        color: "var(--pink)",
+        border: "2px solid var(--pink)",
+        fontWeight: "bold"
+      }}>
+        <Card.Body className="text-center">
+          <Card.Title>Where you can find us</Card.Title>
           <Card.Text>
             If you are interested in adopting a pet, please visit our adoption
             page or contact us directly for more information.
           </Card.Text>
         </Card.Body>
-        <Card.Footer className="text-muted">
+        <Card.Footer className="text-muted text-centered">
           <Breadcrumb>
             <Breadcrumb.Item href="#"> <TelephoneFill className="contact-icon" /> +444-44-4444
             </Breadcrumb.Item>
